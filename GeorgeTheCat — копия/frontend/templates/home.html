@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Forest</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+		<script src="../static/app.js" defer></script>
+		<script src="../static/rain.js" defer></script>
+	</head>
+	<body>
+		<section class="logo1">
+			<!-- <div class="logo" style="background-image: url(../static/img/logo.svg);"></div> -->
+			<div class="logo">Made by: <span class="logo_span">장막심, 최알리나, 천웅호, 정지민</span></div>
+		</section>
+		
+		<section class="layers">
+			<div class="layers__container">
+				<div class="layers__item layer-1" style="background-image: url(../static/img/layer-1.jpg);"></div>
+				<div class="layers__item layer-2" style="background-image: url(../static/img/layer-2.png);"></div>
+				<div class="layers__item layer-3">
+					<div class="hero-content">
+						<h1>Seoraksan national park</h1>
+						<div class="hero-content__p">Here you can find everything about Seoraksan</div>
+						<a class="button-start" href="{{ url_for('chat_page') }}">Start searching</a>
+					</div>
+				</div>
+				<div class="layers__item layer-4">
+					<canvas class="rain"></canvas>
+				</div>
+				<div class="layers__item layer-5" style="background-image: url(../static/img/layer-5.png);"></div>
+				<div class="layers__item layer-6" style="background-image: url(../static/img/layer-6.png);"></div>	
+				</div>
+		</section>
+		<!-- <div style="height:100vh"></div> -->
+
+
+	</body>
+</html>
